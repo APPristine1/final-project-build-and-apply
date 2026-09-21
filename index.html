@@ -14,25 +14,33 @@
 
 <body>
     <section id="landing">
-        <nav>
-            display: flex;
-            justify-content: sb;
-            align-items: center;
-            <div class="row nav__row">
-                <div class="nav__logo">
-                <!--  -->Nav Logo here<!--  -->
-                </div>
-                <!--  -->Enter Nav Links here<!--  -->
-                <button class="btn__menu" onclick="openMenu()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="btn__menu--svg">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
-            </div>
+    <nav>
+     <div class="row nav__row">
+  <a href="#" class="nav__logo">
+    <img
+      src="./assets/logo.2c489fc453a1783cbadacf914c764f8a.svg"
+      alt="Treact logo"
+    />
+    <span>Treact</span>
+  </a>
+
+  <ul class="nav__links">
+    <li><a href="#about" class="nav__link">About</a></li>
+    <li><a href="#blog" class="nav__link">Blog</a></li>
+    <li><a href="#pricing" class="nav__link">Pricing</a></li>
+    <li><a href="#contact" class="nav__link">Contact Us</a></li>
+    <li><a href="#login" class="nav__link">Login</a></li>
+    <li>
+      <a href="#signup" class="nav__link nav__link--primary">Sign Up</a>
+    </li>
+  </ul>
+
+  <button class="btn__menu" aria-label="Open menu">
+    <i class="fas fa-bars"></i>
+  </button>
+</div>
+    </nav>
+           
         </nav>
         <div class="modal">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
@@ -250,7 +258,7 @@
             </div>
         </section>
     </main>
-    
+
     <footer>
   <div class="footer__shape footer__shape--top" aria-hidden="true"></div>
   <div class="footer__shape footer__shape--left" aria-hidden="true"></div>
