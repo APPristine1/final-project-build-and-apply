@@ -878,3 +878,17 @@ MOBILE RESPONSIVENESS ↓
     margin-bottom: 80px;
   }
 }
+
+.header__img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.header__img {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+}
