@@ -1442,3 +1442,322 @@ header .row {
     transform: translateX(0);
   }
 }
+
+/* =========================================
+   FINAL MOBILE FIX — MUST BE LAST IN CSS
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+  /* Prevent horizontal overflow */
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Use full usable phone width */
+  .row,
+  .row__narrow,
+  .container,
+  #quality-work .container,
+  #values .container,
+  #testimonials .container,
+  #cta .container,
+  #footer .footer__container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* NAVIGATION */
+  .nav__links {
+    display: none !important;
+  }
+
+  .btn__menu {
+    display: block !important;
+  }
+
+  .nav__row {
+    width: 100%;
+  }
+
+  /* HERO */
+  .hero__row {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 36px !important;
+  }
+
+  .hero__description,
+  .hero__image-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 38px !important;
+    line-height: 1.15 !important;
+  }
+
+  .hero__para,
+  .hero__email,
+  .hero__customers--logos {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .hero__image {
+    max-width: 100% !important;
+  }
+
+  /* SHARED HEADINGS */
+  .section__title,
+  .quality-work__title,
+  .steps__title,
+  .values__title,
+  .testimonials__title,
+  .pricing__title {
+    font-size: 36px !important;
+  }
+
+  /* FEATURES: exactly one card per row */
+  .features {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    width: 100% !important;
+  }
+
+  .feature {
+    width: 100% !important;
+  }
+
+  /* QUALITY WORK: text above image */
+  .quality-work__row {
+    flex-direction: column !important;
+    gap: 42px !important;
+  }
+
+  .quality-work__description,
+  .quality-work__image-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .quality-work__description {
+    text-align: center;
+  }
+
+  .quality-work__para {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .quality-work__image {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* STEPS: laptop above, step text below */
+  .steps__row {
+    flex-direction: column !important;
+    gap: 48px !important;
+  }
+
+  .steps__image-wrapper,
+  .steps__description {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .steps__image-wrapper {
+    order: 0;
+  }
+
+  .steps__description {
+    order: 1;
+  }
+
+  .steps__image {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .step {
+    gap: 16px !important;
+  }
+
+  .step__number {
+    min-width: 48px !important;
+    font-size: 30px !important;
+  }
+
+  /* VALUES */
+  .values__row {
+    flex-direction: column !important;
+    gap: 40px !important;
+    transform: none !important;
+  }
+
+  .values__description,
+  .values__image-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .values__description {
+    text-align: center;
+  }
+
+  .values__features {
+    flex-direction: column !important;
+    width: 100%;
+    gap: 28px !important;
+    text-align: left;
+  }
+
+  .value {
+    width: 100% !important;
+  }
+
+  .values__image-wrapper {
+    order: 1;
+  }
+
+  /* PRICING: one pricing card per row */
+  .pricing__plans {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .pricing__card {
+    width: 100% !important;
+    max-width: 380px !important;
+  }
+
+  .pricing__card--business {
+    transform: none !important;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials__row {
+    flex-direction: column !important;
+    gap: 42px !important;
+  }
+
+  .testimonials__image-wrapper,
+  .testimonials__description {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .testimonials__footer {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .testimonials__buttons {
+    align-self: flex-end;
+  }
+
+  /* CTA */
+  #cta .cta__box {
+    width: 100% !important;
+    min-height: 0 !important;
+    padding: 52px 24px !important;
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .cta__title {
+    font-size: 30px !important;
+  }
+
+  .cta__buttons {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+
+  .cta__button {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 56px !important;
+  }
+
+  /* FOOTER */
+  #footer .footer__links {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 36px 24px !important;
+  }
+
+  #footer .footer__bottom {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  #footer .footer__socials {
+    justify-content: center !important;
+  }
+}
+
+/* PRICING MOBILE FIX — KEEP AT THE BOTTOM */
+
+@media screen and (max-width: 768px) {
+  #pricing {
+    padding: 80px 20px !important;
+  }
+
+  #pricing .row {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  #pricing .pricing__header {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+
+  #pricing .pricing__title {
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+  }
+
+  #pricing .pricing__para {
+    font-size: 16px !important;
+  }
+
+  #pricing .pricing__plans {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 32px !important;
+    width: 100% !important;
+    margin-top: 48px !important;
+  }
+
+  #pricing .pricing__card {
+    width: 100% !important;
+    max-width: 360px !important;
+    min-height: 0 !important;
+  }
+
+  #pricing .pricing__card--business {
+    transform: none !important;
+  }
+}
